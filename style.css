@@ -1,0 +1,130 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dddfe2;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1877f2;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    color: #606770;
+    margin: 5px 0 0;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #606770;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f5f6f7;
+    box-sizing: border-box;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#generate-btn {
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+    background-color: #166fe5;
+}
+
+.output-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.output-column h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1c1e21;
+    border-bottom: 1px solid #dddfe2;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.output-column textarea {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #f5f6f7;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.output-column textarea:read-only {
+    background-color: #e9ebee;
+    color: #606770;
+} 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veo 3 Prompt Generator by Zaxkyy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Veo 3 Consistent Character Prompt Generator</h1>
+            <p>by Zaxkyy</p>
+        </header>
+        <main>
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="scene-title">1. Judul Scene</label>
+                    <input type="text" id="scene-title" placeholder="Contoh: Terminal bus malam">
+                </div>
+                <div class="input-group">
+                    <label for="character-desc">2. Deskripsi Karakter Inti</label>
+                    <textarea id="character-desc" placeholder="Contoh: Seorang vlogger pria muda asal Maluku berusia 27 tahun.&#10;Perawakan/Bentuk Tubuh: tubuh kekar, tinggi 164cm, bentuk badan proporsional.&#10;..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="character-voice">3. Detail Suara Karakter</label>
+                    <textarea id="character-voice" placeholder="Contoh: Dia berbicara dengan suara pria muda yang hangat dan penuh semangat.&#10;..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="character-action">4. Aksi Karakter</label>
+                    <textarea id="character-action" placeholder="Contoh: berjalan di sekitar terminal bus malam sambil melihat-lihat aktivitas penumpang dan pedagang."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="character-expression">5. Ekspresi Karakter</label>
+                    <textarea id="character-expression" placeholder="Contoh: Karakter menunjukkan ekspresi kagum dan antusias, sering tersenyum sambil melirik kamera."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="location-time">6. Latar Tempat & Waktu</label>
+                    <textarea id="location-time" placeholder="Contoh: latar tempat: di terminal bus antar kota malam hari...&#10;Waktu: malam hari, hujan rintik-rintik."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="visual-details">7. Detail Visual Tambahan</label>
+                    <textarea id="visual-details" placeholder="Contoh: Pencahayaan: natural dari lampu jalan...&#10;Gaya Video/Art Style: cinematic realistis.&#10;Kualitas Visual: Resolusi 4K."></textarea>
+                </div>
+                 <div class="input-group">
+                    <label for="camera-movement">Gerakan Kamera</label>
+                    <select id="camera-movement">
+                        <!-- Options will be populated by script.js -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="overall-mood">8. Suasana Keseluruhan</label>
+                    <textarea id="overall-mood" placeholder="Contoh: Suasana sibuk, ramai, dengan kesan perjalanan malam yang hidup dan dinamis meskipun hujan."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="environment-sound">9. Suara Lingkungan/Ambience</label>
+                    <textarea id="environment-sound" placeholder="Contoh: SOUND: suara mesin bus menyala..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="character-dialogue">10. Dialog Karakter</label>
+                    <textarea id="character-dialogue" placeholder="Contoh: DIALOG dalam Bahasa Indonesia: Karakter berkata: Tiap kota punya terminal kayak gini..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="negative-prompt">11. Negative Prompt</label>
+                    <textarea id="negative-prompt" placeholder="Contoh: Hindari: teks di layar, subtitle, tulisan di video, font, logo..."></textarea>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="generate-btn">Generate Prompt</button>
+            </div>
+            <div class="output-container">
+                <div class="output-column">
+                    <h2>Prompt (Bahasa Indonesia)</h2>
+                    <textarea id="indonesian-prompt" rows="15"></textarea>
+                </div>
+                <div class="output-column">
+                    <h2>Final Prompt (English)</h2>
+                    <textarea id="english-prompt" rows="15" readonly></textarea>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
